@@ -1,0 +1,11 @@
+.container {
+  width: 414px;
+	height: 736px;
+  background-color: #d5d4d4;
+  margin: 20px auto;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: rgb(62, 62, 181);
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+}

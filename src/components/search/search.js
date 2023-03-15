@@ -22,7 +22,7 @@ const Search = ({ onSearchChange }) => {
                     }),
                 };
             })
-            .catch((err) => console.error(err));
+            .catch((err) => console.error(err)); // can be deleted??
     };
 
     const handleOnChange = (searchData) => {

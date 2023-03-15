@@ -1,9 +1,9 @@
 .weather {
     width: 300px;
     border-radius: 6px;
-    box-shadow: 10px -2px 20px 2px rgb(0 0 0 /30%);
-    color: white;
-    background-color: #eb9a7c;
+    border: 3px solid rgb(94, 73, 121); 
+    /* box-shadow: 10px -2px 20px 2px rgb(0 0 0 /30%); */
+    color: rgb(222, 152, 95);
     margin: 20px auto 0 auto;
     padding: 0px 20px 20px 20px;
 }
@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:#f7dcc4;
 }
 
 .city {
@@ -26,14 +25,15 @@
 
 .weather-desc {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1;
     margin: 0;
     text-align: left;
 }
 
 .weather-icon {
-    width: 100px;
+    width: 70px;
+    color: white;
 }
 
 .temperature {
@@ -42,4 +42,39 @@
     width: auto;
     letter-spacing: -5px;
     margin: 0 10px 0 10px;
+}
+
+.details {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.parameter-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-label {
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.parameter-value {
+    text-align: right;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.head {
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.sun-times {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 auto;
+    margin-top: 0 auto;
+    text-align: end;
 }

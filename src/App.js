@@ -5,6 +5,7 @@ function App() {
 
   const handleOnSearchChange = (searchData) => {
     console.log(searchData);
+    console.log("searching works :DDDD");
   }
 
   return (

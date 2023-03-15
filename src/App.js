@@ -1,5 +1,6 @@
 import './App.css';
 import Search from './components/search/search';
+import CurrenntWeather from './components/current-weather/current-weather';
 
 function App() {
 
@@ -10,7 +11,14 @@ function App() {
 
   return (
     <div className="container">
-      <Search onSearchChange={handleOnSearchChange}/>
+      <header>Agro weather app</header>
+      <div className="image-section">
+        <Search className="searchbar" onSearchChange={handleOnSearchChange}/>
+        <CurrenntWeather/>
+      </div>
+      <div className="footer">
+        <footer>This is the footer section</footer>
+      </div>
     </div>
   );
 }

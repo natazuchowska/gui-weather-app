@@ -1,11 +1,35 @@
 .container {
   width: 414px;
 	height: 736px;
-  background-color: #d5d4d4;
+  background-image: url(../background.png);
+  background-size: contain;
   margin: 20px auto;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: rgb(62, 62, 181);
   font-weight: bolder;
   font-size: larger;
   text-align: center;
+  padding: 20px;
+  padding-top: 30px;
+  color: rgb(161, 121, 102);
 }
+
+.header {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: rgb(94, 114, 100);
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 25px;
+}
+
+
+.footer {
+  padding-bottom: 0;
+  margin-bottom: -20;
+}
+
+.searchBar {
+  color: rgb(144, 171, 130);
+  background-color: rgb(179, 207, 165);
+  text-align:left;
+}
+

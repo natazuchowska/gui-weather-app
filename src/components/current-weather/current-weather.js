@@ -4,8 +4,8 @@ const CurrentWeather = ({data}) => {
     return (
         <>
         <div className="sun-times">
-            <div>sunrise<p>{Date(data.sys.sunrise)}</p></div>
-            <div>sunset<p>{Date(data.sys.sunset)}</p></div>
+            <div className="rise">sunrise<p>{data.dt}</p></div>
+            <div className="set">sunset<p>{data.sys.sunset}</p></div>
         </div>
         <div className="weather">
             <div className="top">

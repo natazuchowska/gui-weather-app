@@ -34,7 +34,6 @@ function App() {
 
   return (
     <div className="container">
-      <header>Agro weather app</header>
       <div className="image-section">
         <Search className="searchbar" onSearchChange={handleOnSearchChange}/>
         {currentWeather && <CurrentWeather data={currentWeather}/>} 

@@ -21,7 +21,6 @@
   margin-top: 25px;
 }
 
-
 .footer {
   padding-bottom: 0;
   margin-bottom: -20;
@@ -31,5 +30,11 @@
   color: rgb(144, 171, 130);
   background-color: rgb(179, 207, 165);
   text-align:left;
+  fill: rgb(161, 121, 102);
 }
 
+.rise,
+.set {
+  font-size: medium;
+  padding-top: 5px;
+}

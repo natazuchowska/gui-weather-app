@@ -1,10 +1,10 @@
 .weather {
     width: 300px;
     border-radius: 6px;
-    border: 3px solid rgb(94, 73, 121); 
+    border: 3px solid transparent; 
     /* box-shadow: 10px -2px 20px 2px rgb(0 0 0 /30%); */
     color: rgb(222, 152, 95);
-    margin: 20px auto 0 auto;
+    margin: -5px auto 0 auto;
     padding: 0px 20px 20px 20px;
 }
 
@@ -77,4 +77,10 @@
     padding: 0 auto;
     margin-top: 0 auto;
     text-align: end;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.rise {
+    text-align: left;
 }

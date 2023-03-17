@@ -1,6 +1,7 @@
 import './App.css';
 import Search from './components/search/search';
 import CurrentWeather from './components/current-weather/current-weather';
+import CurrentWeatherDets from './components/current-weather/current-weather-dets';
 import { WEATHER_API_URL, WEATHER_API_KEY } from './api';
 import { useState } from 'react';
 import Forecast from './components/forecast/forecast';
@@ -39,8 +40,9 @@ function App() {
         <Search className="searchbar" onSearchChange={handleOnSearchChange}/>
         {currentWeather && <CurrentWeather data={currentWeather}/>} 
         {forecast && <Forecast data={forecast}/>}
+        {currentWeather && <CurrentWeatherDets data={currentWeather}></CurrentWeatherDets>}
       </div>
-      <div className="footer">
+      <div className="foot">
         <footer>crops_icon home_icon profile_icon</footer>
       </div>
     </div>

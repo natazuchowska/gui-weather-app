@@ -30,6 +30,7 @@ const Search = ({ onSearchChange }) => {
         onSearchChange(searchData);
     }
 
+
     return (
         <AsyncPaginate
             className="searchBar"

@@ -1,8 +1,9 @@
 .container {
+  position: relative;
   width: 414px;
 	height: 736px;
   background-image: url(../background.png);
-  background-size: contain;
+  background-size: cover;
   margin: 20px auto;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: bolder;
@@ -15,7 +16,6 @@
 
 .header {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: rgb(94, 114, 100);
   font-weight: bolder;
   text-align: center;
   margin-top: 25px;
@@ -28,13 +28,22 @@
 
 .searchBar {
   color: rgb(144, 171, 130);
-  background-color: rgb(179, 207, 165);
-  text-align:left;
-  fill: rgb(161, 121, 102);
+  text-align: left;
+  border: 2px solid rgb(222, 152, 95);
+  border-radius: 6px;
 }
 
 .rise,
 .set {
   font-size: medium;
   padding-top: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }

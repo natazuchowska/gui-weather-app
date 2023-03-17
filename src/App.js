@@ -3,6 +3,7 @@ import Search from './components/search/search';
 import CurrentWeather from './components/current-weather/current-weather';
 import { WEATHER_API_URL, WEATHER_API_KEY } from './api';
 import { useState } from 'react';
+import Forecast from './components/forecast/forecast';
 
 function App() {
 
@@ -37,12 +38,12 @@ function App() {
       <div className="image-section">
         <Search className="searchbar" onSearchChange={handleOnSearchChange}/>
         {currentWeather && <CurrentWeather data={currentWeather}/>} 
+        {forecast && <Forecast data={forecast}/>}
       </div>
       <div className="footer">
-        <footer>This is the footer section</footer>
+        <footer>crops_icon home_icon profile_icon</footer>
       </div>
     </div>
   );
 }
-
 export default App;

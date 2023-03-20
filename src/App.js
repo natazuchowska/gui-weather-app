@@ -45,6 +45,7 @@ function App() {
       </div>
       <Footer />
     </div>
+
   );
 }
 export default App;

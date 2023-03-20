@@ -1,6 +1,6 @@
 import './forecast.css';
 
-const DAYS_OF_WEEK = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const DAYS_OF_WEEK = ['Mon', 'Tue', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
 
 const Forecast = ({ data }) => {
 
@@ -11,8 +11,7 @@ const Forecast = ({ data }) => {
 
     return (
         <>
-            <div className="title">forecast for the upcoming week</div>
-            <div className="forecast-items">
+            <div className="forecast-items" >
                 {data.list.splice(0, 7).map((item, id) => (
                     <div key={id}>
                         <div className="daily-item">

@@ -2,16 +2,18 @@
     display: inline-block;
     max-width: 414px;
     min-height: 30px;
-    /*border: 2px solid magenta; */
     margin: 2px;
     padding: 2px;
-    border-radius: 6px;
-    background-color: rgb(54, 97, 54);
+    border-radius: 25px;
+    background-color: rgba(40, 73, 40, 0.5); 
+    margin-top: 80px;
+    
 }
 
 .day {
     font-size: larger;
     color: whitesmoke;
+    stop-opacity: inherit;
 }
 
 .forecast-items {
@@ -28,13 +30,14 @@
 }
 
 .title {
-    margin-top: 80px;
-    color: rgb(69, 56, 81);
+    margin-top: 60px;
+    color: whitesmoke;
+    text-align: left;
 }
 
 .temp {
     font-size: medium;
-    color: rgb(88, 181, 88);
+    color: whitesmoke;
     display: inline;
 }
 

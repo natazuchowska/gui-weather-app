@@ -21,9 +21,9 @@ const Footer = () => {
     return (
         <div>
             <footer className="foot">
-                <button className='redirect-btn' onClick={onHomeClick(1)}><img alt="redirection" className='redirect-img' src="./icons/home.png"></img></button>
+                <button className='redirect-btn' onClick={onHomeClick(1)}><img alt="redirection" className='redirect-img' src="./icons/wheat.png"></img></button>
                 <button className='redirect-btn' onClick={onHomeClick(2)}><img alt="redirection" className='redirect-img' src="./icons/home.png"></img></button>
-                <button className='redirect-btn' onClick={onHomeClick(3)}><img alt="redirection" className='redirect-img' src="./icons/home.png"></img></button>
+                <button className='redirect-btn' onClick={onHomeClick(3)}><img alt="redirection" className='redirect-img' src="./icons/user.png"></img></button>
             </footer>
         </div>
     );

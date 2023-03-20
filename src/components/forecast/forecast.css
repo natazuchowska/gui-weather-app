@@ -1,7 +1,9 @@
 .forecast-bar {
-    margin-top: 10px;
     max-width: fit-content;
     max-height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-evenly;
 }
 
 .daily-item {
@@ -10,13 +12,12 @@
     padding: 5px;
     border-radius: 25px;
     align-items: center;
-    margin: auto;
     background-color: rgba(40, 73, 40, 0.5); 
-    margin-top: 80px;
-    width: 52px;
-    height: 100px;
-    max-width: fit-content;
-    
+    height: 92px;
+    min-width: 50px;
+    margin: 2px;
+    margin-top: 90px;
+    justify-content: space-evenly;
 }
 
 .day {
@@ -28,19 +29,12 @@
 
 .forecast-items {
     display: flex;
-    justify-content: space-between;
-    margin: 0px;
-
-    position: absolute;
-    left:0;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
     width: 57px;
     height: 100px;
-}
-
-.title {
-    margin-top: 60px;
-    color: whitesmoke;
-    text-align: left;
+    left: 0;
 }
 
 .temp {
@@ -54,6 +48,7 @@
     font-weight: 100;
     color: whitesmoke;
     height: 20px;
+    max-width: fit-content;
 }
 
 .icon-small {

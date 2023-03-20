@@ -2,7 +2,7 @@
     width: 250px;
     color: rgb(222, 152, 95);
     margin: 0 auto 0 auto;
-    margin-top: -20px;
+    margin-top: -15px;
     text-align: center;
 }
 
@@ -42,38 +42,38 @@
 }
 
 .details {
-    width: 100%;
     display: flex;
+    position: relative;
     color:  rgb(100, 125, 88);
-    padding: 10px;
-    margin-top: 300px;
-    align-items: center;
-
+    margin-top: 170px;
 }
 
 .column {
+    position: relative;
+    align-items: space-evenly;
     float: left;
     width: 100%;
     border: 2px solid  rgb(144, 171, 130);
     border-radius: 25px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
 }
 .row{
     content: "";
     display: table;
     clear: both;
-}
-
-.row,
-.column {
-    margin-right: 12px;
-    margin-bottom: 10px;
-    padding: 5px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 220px;
 }
 
 .parameter-label {
     text-align: left;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .parameter-value {

@@ -86,8 +86,21 @@
     text-align: left;
 }
 
+.rise,
+.set {
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .city {
     text-align: center;
     font-size: medium;
     margin-top: -8px;
+}
+
+.rise-time,
+.set-time {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 0;
 }

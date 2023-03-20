@@ -5,6 +5,7 @@ import CurrentWeatherDets from './components/current-weather/current-weather-det
 import { WEATHER_API_URL, WEATHER_API_KEY } from './api';
 import { useState } from 'react';
 import Forecast from './components/forecast/forecast';
+import Footer from './components/footer/footer';
 
 function App() {
 
@@ -42,9 +43,7 @@ function App() {
         {forecast && <Forecast data={forecast}/>}
         {currentWeather && <CurrentWeatherDets data={currentWeather}></CurrentWeatherDets>}
       </div>
-      <div>
-        <footer className="foot">crops_icon home_icon profile_icon</footer>
-      </div>
+      <Footer />
     </div>
   );
 }

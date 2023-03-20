@@ -10,13 +10,14 @@ const Forecast = ({ data }) => {
     console.log(days_forecast);
 
     return (
-        <div className='forecast-bar'>
+        <div >
             <div className="forecast-items" >
                 {data.list.splice(0, 7).map((item, id) => (
                     <div key={id}>
                         <div className="daily-item">
                             <label className="day">{days_forecast[id]}</label>
-                            <p className="desc">{<img alt="weather" className="icon-small" src={`icons/${item.weather[0].icon}.png`}></img> /*item.weather[0].description*/}</p>
+                            {/* <img alt="weather" className="icon-small" src={`icons/${item.weather[0].icon}.png`}></img>  */}
+                            <p className="desc">{item.weather[0].description}</p>
                             <p className="temp">{Math.round(item.main.temp)}°C</p>
                         </div>
                     </div>

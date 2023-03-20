@@ -16,7 +16,7 @@ const Forecast = ({ data }) => {
                     <div key={id}>
                         <div className="daily-item">
                             <label className="day">{days_forecast[id]}</label>
-                            <img alt="weather" className="icon-small" src={`icons/${item.weather[0].icon}n.png`}></img> 
+                            <img alt="weather" className="icon-small" src={`icons/${item.weather[0].icon.substring(0,item.weather[0].icon.length-1)}d.png`}></img> {/* try fixing the problem with 'd'/'n' => remove last letter from the server response (how??) */}
                             <p className="desc">{item.weather[0].description}</p>
                             <p className="temp">{Math.round(item.main.temp)}°C</p>
                         </div>

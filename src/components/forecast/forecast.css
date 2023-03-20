@@ -50,6 +50,8 @@
 
 .icon-small {
     width: 30px;
-    display: block;
-    align-content:end;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: -5px;
 }

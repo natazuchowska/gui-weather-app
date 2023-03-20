@@ -1,4 +1,18 @@
-.redirect-icon {
-    width: 40px;
+.redirect-btn {
     align-items: center; 
+}
+
+.redirect-img {
+    max-width: 40px;
+}
+
+.foot {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0 auto;
+    margin-top: 0 auto;
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+
 }

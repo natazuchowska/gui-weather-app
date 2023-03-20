@@ -3,7 +3,7 @@ import "./current-weather.css";
 const CurrentWeatherDets = ({ data }) => {
     return (
         <div className="details">
-            <div class="row">
+            <div className="row">
                 <div className="column">
                     <span className="parameter-label">Feels like </span>
                     <span className="parameter-value">{Math.round(data.main.feels_like)}°C</span>
@@ -13,7 +13,7 @@ const CurrentWeatherDets = ({ data }) => {
                     <span className="parameter-value">{data.wind.speed}m/s</span>
                 </div>
             </div>
-            <div class="row">
+            <div className="row">
                 <div className="column">
                     <span className="parameter-label">Humidity </span>
                     <span className="parameter-value">{data.main.humidity}%</span>

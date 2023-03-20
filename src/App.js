@@ -39,7 +39,7 @@ function App() {
     <div className="container">
       <div className="image-section">
         <Search className="searchbar" onSearchChange={handleOnSearchChange}/>
-        {currentWeather? <CurrentWeather data={currentWeather}/> : <p className='title-screen'>Welcome to <p className='app-name'>AgroWeather app</p></p>} 
+        {currentWeather? <CurrentWeather data={currentWeather}/> : <div className='title-screen'>Welcome to <p className='app-name'>AgroWeather app</p></div>} 
         {forecast && <Forecast data={forecast}/>}
         {currentWeather && <CurrentWeatherDets data={currentWeather}></CurrentWeatherDets>}
       </div>

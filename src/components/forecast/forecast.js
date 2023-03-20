@@ -10,7 +10,7 @@ const Forecast = ({ data }) => {
     console.log(days_forecast);
 
     return (
-        <>
+        <div className='forecast-bar'>
             <div className="forecast-items" >
                 {data.list.splice(0, 7).map((item, id) => (
                     <div key={id}>
@@ -23,7 +23,7 @@ const Forecast = ({ data }) => {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     );
 }
 

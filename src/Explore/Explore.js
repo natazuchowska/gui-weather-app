@@ -1,4 +1,5 @@
 import './Explore.css';
+
 function Explore(){
     return(
         <div>

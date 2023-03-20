@@ -43,11 +43,12 @@
 
 .details {
     width: 100%;
-    margin-top: 200px;
     display: flex;
     color:  rgb(100, 125, 88);
-    padding: 3px;
+    padding: 10px;
     margin-top: 300px;
+    align-items: center;
+
 }
 
 .column {
@@ -60,6 +61,13 @@
     content: "";
     display: table;
     clear: both;
+}
+
+.row,
+.column {
+    margin-right: 12px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 .parameter-label {
@@ -112,5 +120,8 @@
 }
 
 .time{
-    color: whitesmoke;
+    color: rgb(131, 85, 64);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 0;
 }

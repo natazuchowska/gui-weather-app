@@ -1,12 +1,21 @@
+.forecast-bar {
+    margin-top: 10px;
+    max-width: fit-content;
+    max-height: 40px;
+}
+
 .daily-item {
     display: inline-block;
-    max-width: 414px;
-    min-height: 30px;
-    margin: 2px;
-    padding: 2px;
+    position: relative;
+    padding: 5px;
     border-radius: 25px;
+    align-items: center;
+    margin: auto;
     background-color: rgba(40, 73, 40, 0.5); 
     margin-top: 80px;
+    width: 52px;
+    height: 100px;
+    max-width: fit-content;
     
 }
 
@@ -14,19 +23,18 @@
     font-size: larger;
     color: whitesmoke;
     stop-opacity: inherit;
+    font-size: small;
 }
 
 .forecast-items {
     display: flex;
     justify-content: space-between;
     margin: 0px;
-    align-items: center;
+
     position: absolute;
     left:0;
-}
-
-.day {
-    font-size: small;
+    width: 57px;
+    height: 100px;
 }
 
 .title {
@@ -45,6 +53,7 @@
     font-size: small;
     font-weight: 100;
     color: whitesmoke;
+    height: 20px;
 }
 
 .icon-small {

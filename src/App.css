@@ -21,9 +21,11 @@
   margin-top: 25px;
 }
 
-.footer {
+.foot {
+  position: fixed;
   padding-bottom: 0;
   margin-bottom: -20;
+  justify-content: space-between;
 }
 
 .searchBar {
@@ -45,4 +47,18 @@
   justify-content: space-between;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+.title-screen {
+  font-size: 25px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+
+.app-name {
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: wavy;
+  color: rgb(131, 85, 64);
 }

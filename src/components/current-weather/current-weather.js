@@ -10,7 +10,7 @@ const CurrentWeather = ({ data }) => {
             <div className="weather">
                 <div className="top">
                     <div>
-                        <img alt="weather" className="weather-icon" src="../../../icons/clouds-2-256.png"></img>
+                        <img alt="weather" className="weather-icon" src={`../../../icons/${data.weather[0].icon}.png`}></img> {/*chooses the correct icon from the icons folder based on the weather desc */}
                         <p className="weather-desc">{data.weather[0].description}</p>
                     </div>
                     <p className="temperature">{Math.round(data.main.temp)}°C</p>

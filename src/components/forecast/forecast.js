@@ -17,7 +17,7 @@ const Forecast = ({ data }) => {
                     <div key={id}>
                         <div className="daily-item">
                             <label className="day">{days_forecast[id]}</label>
-                            {/* DOESN'T WANT TO DISPLAY BELOW THE DAY <img alt="weather" className="icon-small" src={`icons/${item.weather[0].icon}.png`}></img> */}
+                            <img alt="weather" className="icon-small" src={`icons/${item.weather[0].icon}.png`}></img> 
                             <p className="desc">{item.weather[0].description}</p>
                             <p className="temp">{Math.round(item.main.temp)}°C</p>
                         </div>

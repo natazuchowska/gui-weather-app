@@ -38,12 +38,12 @@ function App() {
     <div className="container">
       <div className="image-section">
         <Search className="searchbar" onSearchChange={handleOnSearchChange}/>
-        {currentWeather && <CurrentWeather data={currentWeather}/>} 
+        {currentWeather? <CurrentWeather data={currentWeather}/> : <p className='title-screen'>Welcome to <p className='app-name'>AgroWeather app</p></p>} 
         {forecast && <Forecast data={forecast}/>}
         {currentWeather && <CurrentWeatherDets data={currentWeather}></CurrentWeatherDets>}
       </div>
-      <div className="foot">
-        <footer>crops_icon home_icon profile_icon</footer>
+      <div>
+        <footer className="foot">crops_icon home_icon profile_icon</footer>
       </div>
     </div>
   );

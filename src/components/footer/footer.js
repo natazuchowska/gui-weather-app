@@ -1,3 +1,4 @@
+import React from 'react';
 import './footer.css';
 import { redirect } from "react-router-dom";
 

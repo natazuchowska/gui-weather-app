@@ -45,7 +45,7 @@
     display: flex;
     position: relative;
     color:  rgb(100, 125, 88);
-    margin-top: 174px;
+    margin-top: 160px;
 }
 
 .column {
@@ -109,7 +109,7 @@
 .rise,
 .set {
     font-size: 15px;
-    font-weight: 900;
+    font-weight: bolder;
 }
 
 .city {
@@ -120,8 +120,12 @@
 }
 
 .time{
-    color: rgb(131, 85, 64);
-    font-size: 20px;
-    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 200;
     margin-top: 0;
+}
+
+.pressure-img, .feels-img, .humidity-img, .wind-img{
+    width: 25px;
 }

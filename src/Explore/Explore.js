@@ -1,5 +1,5 @@
 import './Explore.css';
-import {}
+
 function Explore(){
     return(
         <div className='container'>

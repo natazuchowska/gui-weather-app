@@ -1,9 +1,9 @@
 .container {
     position: relative;
-    width: 414px;
-    height: 736px;
-    background-image: url(../background.png);
-    background-size: cover;
+    /* width: 414px; */
+    /* height: 736px; */
+    /* background-image: url(../background.png); */
+    /* background-size: cover; */
     margin: 20px auto;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: bolder;

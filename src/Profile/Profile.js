@@ -1,6 +1,5 @@
 import './Profile.css';
 import React from 'react';
-import Footer from './components/footer/footer';
 
 function Profile(){
     return(
@@ -10,4 +9,4 @@ function Profile(){
     )
 
 }
-export default Profile
+export default Profile;

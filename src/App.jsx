@@ -6,6 +6,8 @@ import { WEATHER_API_URL, WEATHER_API_KEY } from './api';
 import { useState } from 'react';
 import Forecast from './components/forecast/forecast';
 import Footer from './components/footer/footer';
+import Explore from './Explore/Explore';
+import Profile from './Profile/Profile';
 
 function App() {
 
@@ -54,9 +56,15 @@ function App() {
   }
 
   // Example of a second component to be rendered
+  const renderExplore = () => {
+    return (
+      <Explore>IMPLEMENT THE EXPLORE PAGE HERE</Explore>
+    )
+  }
+
   const renderProfile = () => {
     return (
-      <section> <h1>hi</h1></section>
+      <Profile>IMPLEMENT THE PROFILE PAGE HERE</Profile>
     )
   }
 
@@ -65,10 +73,11 @@ function App() {
   // a different component will be rendered.
   const render = () => {
     switch (currentPage) {
-      case 'home':
-        return renderHome();
+      case 'explore':
+        return renderExplore();
       case 'profile':
-        return renderProfile()
+        return renderProfile();
+      case 'home':
       default:
         return renderHome();
     }
@@ -77,7 +86,7 @@ function App() {
   return (
     <div className="container">
       {render()}
-      {currentWeather && <Footer setPage={setCurrentPage} />} {/* display the redirection menu only if weather data displayed */}
+      {currentWeather && forecast && <Footer setPage={setCurrentPage} />} {/* display the redirection menu only if weather data displayed */}
     </div>
 
   );

@@ -1,13 +1,11 @@
-import './Explore.css';
 import React from 'react';
-import Footer from './components/footer/footer';
 
 function Explore(){
     return(
-        <div className='container'>
+        <div>
             This is the Explore page!
         </div>
     )
 
 }
-export default Explore 
+export default Explore;

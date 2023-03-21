@@ -1,4 +1,5 @@
 import './Explore.css';
+import Footer from './components/footer/footer';
 
 function Explore(){
     return(

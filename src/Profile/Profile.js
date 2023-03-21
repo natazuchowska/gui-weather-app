@@ -1,4 +1,6 @@
 import './Profile.css';
+import Footer from './components/footer/footer';
+
 function Profile(){
     return(
         <div>

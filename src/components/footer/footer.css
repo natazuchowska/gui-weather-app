@@ -3,11 +3,11 @@
 }
 
 .foot {
-    position: relative;
+    position: relative bottom;
     display: flex;
-    align-items: center;
-    bottom: 0;
-    margin: 30px 20px -22px 20px;
+    margin: 30px 20px 32px 20px;
+    width: 250px;
+    justify-content: ;
 }
 
 button {

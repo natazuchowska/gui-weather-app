@@ -43,7 +43,7 @@ function App() {
         {forecast && <Forecast data={forecast}/>}
         {currentWeather && <CurrentWeatherDets data={currentWeather}></CurrentWeatherDets>}
       </div>
-      {currentWeather && <Footer />} {/* display the redirection menu only if weather data displayed */}
+      {currentWeather && <Footer/>} {/* display the redirection menu only if weather data displayed */}
     </div>
 
   );

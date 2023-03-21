@@ -5,13 +5,13 @@ const Footer = () => {
 
     function onHomeClick(i) {
         if (i===1) {
-            redirect("gui-weather-app/src/explore/Explore.js");
+            redirect("gui-weather-app/src/Explore/Explore.js");
         }
         if (i===2) {
             redirect("gui-weather-app/src/App.js");
         }
         if (i===3) {
-            redirect("gui-weather-app/src/profile/Profile.js");
+            redirect("gui-weather-app/src/Profile/Profile.js");
         }
         else {
             return;

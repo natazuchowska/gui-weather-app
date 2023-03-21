@@ -20,12 +20,12 @@ function App() {
     const forecastFetch = fetch(`${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`); // fetch for the forecast for upcoming days
 
     Promise.all([currentWeatherFetch, forecastFetch])
-      .then(async(response) => {
+      .then(async (response) => {
         const weatherResponse = await response[0].json();
         const forecastResponse = await response[1].json();
 
-        setCurrentWeather({city: searchData.label , ...weatherResponse}); //set the currentWeather variable to the response received from server
-        setForecast({city: searchData.label , ...forecastResponse});
+        setCurrentWeather({ city: searchData.label, ...weatherResponse }); //set the currentWeather variable to the response received from server
+        setForecast({ city: searchData.label, ...forecastResponse });
       })
       .catch((err) => console.log(err));
 
@@ -35,15 +35,42 @@ function App() {
   console.log(currentWeather);
   console.log(forecast);
 
-  return (
-    <div className="container">
+
+  const [currentPage, setCurrentPage] = useState('home')
+
+  const renderHome = () => {
+    return (
       <div className="image-section">
-        <Search className="searchbar" onSearchChange={handleOnSearchChange}/>
-        {currentWeather? <CurrentWeather data={currentWeather}/> : <div className='title-screen'>Welcome to <p className='app-name'>AgroWeather app</p></div>} 
-        {forecast && <Forecast data={forecast}/>}
+        <Search className="searchbar" onSearchChange={handleOnSearchChange} />
+        {currentWeather ? <CurrentWeather data={currentWeather} /> : <div className='title-screen'>Welcome to <p className='app-name'>AgroWeather app</p></div>}
+        {forecast && <Forecast data={forecast} />}
         {currentWeather && <CurrentWeatherDets data={currentWeather}></CurrentWeatherDets>}
       </div>
-      {currentWeather && <Footer/>} {/* display the redirection menu only if weather data displayed */}
+    )
+  }
+
+
+  const renderProfile = () => {
+    return (
+      <section> <h1>hi</h1></section>
+    )
+  }
+
+  const render = () => {
+    switch (currentPage) {
+      case 'home':
+        return renderHome();
+      case 'profile':
+        return renderProfile()
+      default:
+        return renderHome();
+    }
+  }
+
+  return (
+    <div className="container">
+      {render()}
+      {currentWeather && <Footer setPage={setCurrentPage} />} {/* display the redirection menu only if weather data displayed */}
     </div>
 
   );

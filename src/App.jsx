@@ -36,8 +36,12 @@ function App() {
   console.log(forecast);
 
 
+  // 'currentPage' stores the name of the component/element-group that is currently being rendered
+  // - The value is used to determine which component to render via conditional rendering (see render() function)
+  // - The setCurrentPage() function is passed to the Footer component, so that the Footer component can change the value of 'currentPage'
   const [currentPage, setCurrentPage] = useState('home')
 
+  // Main elements to be rendered
   const renderHome = () => {
     return (
       <div className="image-section">
@@ -49,13 +53,16 @@ function App() {
     )
   }
 
-
+  // Example of a second component to be rendered
   const renderProfile = () => {
     return (
       <section> <h1>hi</h1></section>
     )
   }
 
+  // Function for conditional rendering, 
+  // depending on the state of the state variable 'currentPage'  
+  // a different component will be rendered.
   const render = () => {
     switch (currentPage) {
       case 'home':

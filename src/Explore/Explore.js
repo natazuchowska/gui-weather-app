@@ -10,10 +10,10 @@ const Explore = ({ data }) => {
         case (temp<0):
             return (
                 <div className="box">
-                    <p className="veg">leek</p>
-                    <p className="veg">turnip</p>
-                    <p className="veg">kale</p>
-                    <p className="veg">collard greens</p>
+                    <div className="veg"><p>leek</p><img alt="leek" className='veg-img' src="./icons/leek.png"></img></div>
+                    <div className="veg"><p>turnip</p><img alt="turnip" className='veg-img' src="./icons/turnip.png"></img></div>
+                    <div className="veg"><p>kale</p><img alt="kale" className='veg-img' src="./icons/kale.png"></img></div>
+                    <div className="veg"><p>collard greens</p><img alt="collard greens" className='veg-img' src="./icons/lettuce.png"></img></div>
                 </div>
             );
         case(temp>=0 && temp<10):
@@ -21,10 +21,10 @@ const Explore = ({ data }) => {
                 <>
                     <header className="title">Crops suitable for the weather</header>
                     <div className="box">
-                        <p className="veg">spring canola</p>
-                        <p className="veg">sugar beat</p>
-                        <p className="veg">broccoli</p>
-                        <p className="veg">carrots</p>
+                        <div className="veg"><p>spring canola</p><img alt="spring canola" className='veg-img' src="./icons/soybean.png"></img></div>
+                        <div className="veg"><p>sugar beat</p><img alt="sugar beat" className='veg-img' src="./icons/beetroot.png"></img></div>
+                        <div className="veg"><p>broccoli</p><img alt="broccoli" className='veg-img' src="./icons/broccoli.png"></img></div>
+                        <div className="veg"><p>carrots</p><img alt="carrots" className='veg-img' src="./icons/carrots.png"></img></div>
                     </div>
                 </>
             );
@@ -33,22 +33,22 @@ const Explore = ({ data }) => {
                 <>
                     <header className="title">Crops suitable for the weather</header>
                     <div className="box">
-                        <div className="veg"><p>soybeans</p></div>
+                        <div className="veg"><p>soybeans</p><img alt="soybeans" className='veg-img' src="./icons/soybean.png"></img></div>
                         <div className="veg"><p>sunflower</p><img alt="sunflower" className='veg-img' src="./icons/sunflower.png"></img></div>
-                        <div className="veg"><p>cucumber</p></div>
-                        <div className="veg"><p>sweetcorn</p></div>
+                        <div className="veg"><p>cucumber</p><img alt="cucumber" className='veg-img' src="./icons/cucumber.png"></img></div>
+                        <div className="veg"><p>sweetcorn</p><img alt="sweetcorn" className='veg-img' src="./icons/corn.png"></img></div>
                     </div>
                 </>
             );
         case(temp>=20 && temp<30):
             return (
                 <>
-                    <header className="title">Crops suitable for the weather</header>
+                    <header className="title">Crops suitable to grow in {temp}0C</header>
                     <div className="box">
-                        <p className="veg">dry beans</p>
-                        <p className="veg">watermelon</p>
-                        <p className="veg">pepper</p>
-                        <p className="veg">okra</p>
+                        <div className="veg"><p>dry beans</p><img alt="dry beans" className='veg-img' src="./icons/coffee-beans.png"></img></div>
+                        <div className="veg"><p>watermelon</p><img alt="watermelon" className='veg-img' src="./icons/watermelon.png"></img></div>
+                        <div className="veg"><p>pepper</p><img alt="pepper" className='veg-img' src="./icons/bell-pepper.png"></img></div>
+                        <div className="veg"><p>okra</p><img alt="okra" className='veg-img' src="./icons/okra.png"></img></div>
                     </div>
                 </>
             );
@@ -57,10 +57,10 @@ const Explore = ({ data }) => {
                 <>
                     <header className="title">Crops suitable for the weather</header>
                     <div className="box">
-                        <p className="veg">rice</p>
-                        <p className="veg">eggplant</p>
-                        <p className="veg">courgette</p>
-                        <p className="veg">sorghum</p>
+                        <div className="veg"><p>rice</p><img alt="rice" className='veg-img' src="./icons/rice.png"></img></div>
+                        <div className="veg"><p>eggplant</p><img alt="eggplant" className='veg-img' src="./icons/eggplant.png"></img></div>
+                        <div className="veg"><p>courgette</p><img alt="courgette" className='veg-img' src="./icons/zucchini.png"></img></div>
+                        <div className="veg"><p>sorghum</p><img alt="sorghum" className='veg-img' src="./icons/sorghum.png"></img></div>
                     </div>
                 </>
             );
@@ -69,10 +69,10 @@ const Explore = ({ data }) => {
                 <>
                     <header className="title">Crops suitable for the weather</header>
                     <div className="box">
-                        <p className="veg">spring canola</p>
-                        <p className="veg">sugar beat</p>
-                        <p className="veg">millet</p>
-                        <p className="veg">sweetcorn</p>
+                        <div className="veg"><p>spring canola</p><img alt="spring canola" className='veg-img' src="./icons/soybean.png"></img></div>
+                        <div className="veg"><p>sugar beat</p><img alt="sugar beat" className='veg-img' src="./icons/beetroot.png"></img></div>
+                        <div className="veg"><p>broccoli</p><img alt="broccoli" className='veg-img' src="./icons/broccoli.png"></img></div>
+                        <div className="veg"><p>carrots</p><img alt="carrots" className='veg-img' src="./icons/carrots.png"></img></div>
                     </div>
                 </>
             );

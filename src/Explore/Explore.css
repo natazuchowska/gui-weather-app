@@ -1,15 +1,25 @@
-.container {
-    position: relative;
-    /* width: 414px; */
-    /* height: 736px; */
-    /* background-image: url(../background.png); */
-    /* background-size: cover; */
-    margin: 20px auto;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+.title {
+    color: rgb(222, 152, 95);
+    margin-top: 30px;
+    font-size: 26px;
+    margin-bottom: 10px;
     font-weight: bolder;
-    font-size: larger;
-    text-align: center;
-    padding: 20px;
-    padding-top: 30px;
-    color: rgb(161, 121, 102);
+}
+
+.box {
+    border-radius: 30px;
+    color: rgb(100, 125, 88);
+    background-color:rgb(229,239,220);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin-right: 0;
+}
+
+.veg {
+    display: flex;
+    padding: 30px;
+    border: 2px solid rgb(144, 171, 130);
+    border-radius: 30px;
+    margin: 20px;
 }

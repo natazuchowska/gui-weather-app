@@ -14,6 +14,7 @@ function App() {
   const [currentWeather, setCurrentWeather] = useState(null); // hooks to store and then update weather data
   const [forecast, setForecast] = useState(null);
 
+
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
 
@@ -59,9 +60,9 @@ function App() {
   // Example of a second component to be rendered
   const renderExplore = () => {
     return (
-      <div>
+      <>
         {currentWeather && <Explore data={currentWeather}> </Explore>}
-      </div>
+      </>
     )
   }
 
@@ -88,9 +89,9 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className='container'>
       {render()}
-      {currentWeather && forecast && <Footer setPage={setCurrentPage} />} {/* display the redirection menu only if weather data displayed */}
+      {currentWeather && forecast && <Footer setPage={setCurrentPage}/>} {/* display the redirection menu only if weather data displayed */}
     </div>
 
   );

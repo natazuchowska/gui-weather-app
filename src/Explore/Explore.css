@@ -18,8 +18,16 @@
 
 .veg {
     display: flex;
-    padding: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 2px solid rgb(144, 171, 130);
-    border-radius: 30px;
+    border-radius: 40px;
     margin: 20px;
+}
+
+.veg-img {
+    width: 60px;
+    height: 60px;
 }

@@ -33,10 +33,10 @@ const Explore = ({ data }) => {
                 <>
                     <header className="title">Crops suitable for the weather</header>
                     <div className="box">
-                        <div><p className="veg">soybeans</p></div>
-                        <div><p className="veg">sunflower</p><img alt="sunflower" className='profile-img' src="./icons/sunflower.png"></img></div>
-                        <div><p className="veg">cucumber</p></div>
-                        <div><p className="veg">sweetcorn</p></div>
+                        <div className="veg"><p>soybeans</p></div>
+                        <div className="veg"><p>sunflower</p><img alt="sunflower" className='veg-img' src="./icons/sunflower.png"></img></div>
+                        <div className="veg"><p>cucumber</p></div>
+                        <div className="veg"><p>sweetcorn</p></div>
                     </div>
                 </>
             );

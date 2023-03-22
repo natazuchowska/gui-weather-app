@@ -1,7 +1,7 @@
 import React from 'react';
-
-function Explore({data}){
-    return(
+import "./crops_api"
+function Explore({data}) {
+    return (
         <div>
             This is the Explore page!
             <p>{Math.round(data.main.temp)}°C</p>

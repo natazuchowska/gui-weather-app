@@ -3,8 +3,8 @@ import React from 'react';
 
 function Profile(){
     return(
-        <div>
-            This is the profile page!
+        <div className='profile-section'>
+            <header className="title">Jane Reid</header>
             <div>
                 <img alt="farmer" className='profile-img' src="./icons/profile.png"></img>
             </div>

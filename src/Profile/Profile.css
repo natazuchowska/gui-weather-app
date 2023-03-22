@@ -1,0 +1,18 @@
+.profile-img {
+    margin-left: 40px;
+    margin-top: -50px;
+    width: 70px;
+    float: left;
+}
+
+.profile-section {
+    background-color: rgb(229,239,220);
+    border-radius: 30px;
+    padding-bottom: 500px;
+}
+
+.title {
+    padding-top: 40px;
+    color:rgb(106, 70, 112);
+    font-weight: 1500;
+}

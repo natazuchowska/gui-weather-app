@@ -1,6 +1,6 @@
 .profile-img {
     margin-left: 60px;
-    margin-top: -40px;
+    margin-top: -80px;
     width: 100px;
     float: left;
 }
@@ -18,4 +18,29 @@
     color: rgb(106, 70, 112);
     font-size: 25px;
     padding-left: 40px;
+}
+
+h1, h2 {
+    font-size: 25px;
+}
+
+
+.about-me {
+    color: rgb(135, 154, 126);
+    margin-top: 70px;
+    display: block;
+    text-align: left;
+    margin-left: 60px;
+}
+
+li, p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.subscr {
+    margin-top: 0;
+    color: rgb(131, 104, 136);
+    font-size: 16px;
+    margin-left: -20px;
 }

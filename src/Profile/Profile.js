@@ -1,6 +1,7 @@
 import './Profile.css';
 import React from 'react';
 
+// a page to display the profile of the farmer
 function Profile(){
     return(
         <div className='profile-section'>

@@ -36,8 +36,8 @@ function App() {
   };
 
   //test to see if the variables are actually receiving and storing data from the api request
-  console.log(currentWeather);
-  console.log(forecast);
+  // console.log(currentWeather);
+  // console.log(forecast);
 
 
   // 'currentPage' stores the name of the component/element-group that is currently being rendered
@@ -60,9 +60,9 @@ function App() {
   // Example of a second component to be rendered
   const renderExplore = () => {
     return (
-      <>
+      <div>
         {currentWeather && <Explore data={currentWeather}> </Explore>}
-      </>
+      </div>
     )
   }
 

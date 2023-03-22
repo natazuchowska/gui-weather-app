@@ -6,7 +6,7 @@ function Profile(){
         <div>
             This is the profile page!
             <div>
-                <img alt="farmer" className='profile-img' src="profile.png"></img>
+                <img alt="farmer" className='profile-img' src="./icons/profile.png"></img>
             </div>
         </div>
     )

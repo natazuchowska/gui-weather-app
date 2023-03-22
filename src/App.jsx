@@ -27,6 +27,7 @@ function App() {
         const forecastResponse = await response[1].json();
 
         setCurrentWeather({ city: searchData.label, ...weatherResponse }); //set the currentWeather variable to the response received from server
+
         setForecast({ city: searchData.label, ...forecastResponse });
       })
       .catch((err) => console.log(err));
@@ -49,7 +50,7 @@ function App() {
       <div className="image-section">
         <Search className="searchbar" onSearchChange={handleOnSearchChange} />
         {currentWeather ? <CurrentWeather data={currentWeather} /> : <div className='title-screen'>Welcome to <p className='app-name'>AgroWeather app</p></div>}
-        {forecast && <Forecast data={forecast} />}
+        {currentWeather && forecast && <Forecast data={forecast} />}
         {currentWeather && <CurrentWeatherDets data={currentWeather}></CurrentWeatherDets>}
       </div>
     )
@@ -58,7 +59,9 @@ function App() {
   // Example of a second component to be rendered
   const renderExplore = () => {
     return (
-      <Explore>IMPLEMENT THE EXPLORE PAGE HERE</Explore>
+      <div>
+        {currentWeather && <Explore data={currentWeather}> </Explore>}
+      </div>
     )
   }
 
@@ -78,6 +81,7 @@ function App() {
       case 'profile':
         return renderProfile();
       case 'home':
+        return renderHome();
       default:
         return renderHome();
     }

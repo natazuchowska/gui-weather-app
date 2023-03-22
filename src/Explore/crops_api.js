@@ -1,4 +1,4 @@
-const options = {
+const cropsApiOptions = {
     method: 'GET',
     headers: {
         'X-RapidAPI-Key': 'dae2290614mshd291408df134e51p1c0cb2jsnb54579c9ffc2',

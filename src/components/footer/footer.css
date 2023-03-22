@@ -3,10 +3,12 @@
 }
 
 .foot {
-    position: relative bottom;
+    position: fixed;
     display: flex;
-    margin: 30px 20px 32px 20px;
-    width: 250px;
+    justify-content: center;
+    /* margin: 30px 20px 32px 20px; */
+    width: inherit;
+    align-items: center;
 }
 
 button {
@@ -17,6 +19,8 @@ button {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 /* on press scale down a lil*/

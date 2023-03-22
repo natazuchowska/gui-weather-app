@@ -5,6 +5,7 @@ function Profile(){
     return(
         <div>
             This is the profile page!
+            <img alt="farmer" className='profile-img' src="./["></img>
         </div>
     )
 

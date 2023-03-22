@@ -58,7 +58,9 @@ function App() {
   // Example of a second component to be rendered
   const renderExplore = () => {
     return (
-      <Explore>IMPLEMENT THE EXPLORE PAGE HERE</Explore>
+      <div className="image-section">
+        {currentWeather ? <CurrentWeather data={currentWeather} /> : <div className='title-screen'>Welcome to <p className='app-name'>AgroWeather app</p></div>}
+      </div>
     )
   }
 

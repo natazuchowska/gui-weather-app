@@ -1,5 +1,5 @@
 const apiUrl = 'https://trefle.io/api/v1/plants';
-const apiKey = 'YOUR_API_KEY'; 
+const apiKey = 'WxuPjSIF7_FiPCJWqCdu7pAJxI9wvJPbU5KLMVCrY7M'; 
 const temperatureMinimum = 25; 
 const precipitationMaximum = 50; 
 

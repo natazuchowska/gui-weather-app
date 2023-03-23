@@ -48,12 +48,17 @@ li, p {
 }
 
 textarea {
-    background-color:  rgb(229,239,220);
     color: rgb(135, 154, 126);
-    width: 350px;
+    background-color:  rgb(229,239,220);
+    width: 335px;
+    max-width: 335px;
     border-radius: 20px;
     border: 2px solid  rgb(135, 154, 126);
-    padding: 10px;
-    height: 228px;
+    padding: 18px;
+    height: 213px;
     font-size: 14px;
+}
+
+textarea::placeholder {
+    color:  rgb(185, 199, 179);
 }

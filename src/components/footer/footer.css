@@ -3,7 +3,7 @@
 }
 
 .foot {
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     /* margin: 30px 20px 32px 20px; */

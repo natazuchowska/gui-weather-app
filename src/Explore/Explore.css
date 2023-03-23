@@ -15,7 +15,7 @@
     display: block;
     margin: -20px;
     margin-top: 20px;
-
+    margin-bottom: 70px;
 }
 
 .veg {
@@ -42,11 +42,16 @@
 
 .name {
     display: block;
-    text-align:left;
+    text-align: left;
 }
 
 .veg-img {
     padding-top: 10px;
     width: 55px;
     height: 55px;
+}
+
+.veg-name {
+    font-size: 20px;
+    font-weight: 600;
 }

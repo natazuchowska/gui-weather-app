@@ -24,7 +24,7 @@ function Profile(){
 
     return(
         <div className='profile-section'>
-            <header className ='title' >Annae Green</header>
+            <header className ='title' >Anne Green</header>
             <p className='subscr'>Farmer</p>
             <div>
                 <img alt="farmer" className='profile-img' src="./icons/profile.png"></img>

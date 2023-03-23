@@ -18,6 +18,7 @@ function App() {
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
 
+    // fetch dor data to the OpenWeatherMap API
     const currentWeatherFetch = fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`); // fetch for the current weather
 
     const forecastFetch = fetch(`${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`); // fetch for the forecast for upcoming days
@@ -34,11 +35,6 @@ function App() {
       .catch((err) => console.log(err));
 
   };
-
-  //test to see if the variables are actually receiving and storing data from the api request
-  // console.log(currentWeather);
-  // console.log(forecast);
-
 
   // 'currentPage' stores the name of the component/element-group that is currently being rendered
   // - The value is used to determine which component to render via conditional rendering (see render() function)
@@ -57,7 +53,7 @@ function App() {
     )
   }
 
-  // Example of a second component to be rendered
+  // render for the Explore component 
   const renderExplore = () => {
     return (
       <div>
@@ -66,6 +62,7 @@ function App() {
     )
   }
 
+  // render for the Profile component
   const renderProfile = () => {
     return (
       <Profile>IMPLEMENT THE PROFILE PAGE HERE</Profile>
@@ -93,7 +90,6 @@ function App() {
       {render()}
       {currentWeather && forecast && <Footer setPage={setCurrentPage}/>} {/* display the redirection menu only if weather data displayed */}
     </div>
-
   );
 }
 export default App;

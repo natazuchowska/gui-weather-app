@@ -18,7 +18,7 @@
     padding-top: 60px;
     color: rgb(106, 70, 112);
     font-size: 25px;
-    padding-left: 40px;
+    padding-left: 0px;
 }
 
 h1, h2 {
@@ -44,5 +44,5 @@ li, p {
     margin-top: 0;
     color: rgb(131, 104, 136);
     font-size: 16px;
-    margin-left: -20px;
+    margin-left: -60px;
 }

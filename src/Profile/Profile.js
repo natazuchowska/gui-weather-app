@@ -8,21 +8,23 @@ function Profile(){
 
     const [aboutMe, setAboutMe] = useState('');
 
-    const handleAboutMeChange = (event) => {
-        setAboutMe(event.target.value);
-    }
-
     useEffect(() => {
         const storedAboutMe = localStorage.getItem('aboutMe');
         if (storedAboutMe) {
-            setAboutMe(storedAboutMe);
+        setAboutMe(storedAboutMe);
         }
     }, []);
+
+    const handleAboutMeChange = (event) => {
+        const value = event.target.value;
+        setAboutMe(value);
+        localStorage.setItem('aboutMe', value);
+    };
 
 
     return(
         <div className='profile-section'>
-            <header className='title'>Profile</header>
+            <header className ='title' >Profile</header>
             <p className='subscr'>Farmer</p>
             <div>
                 <img alt="farmer" className='profile-img' src="./icons/profile.png"></img>
@@ -36,11 +38,11 @@ function Profile(){
                     In my free time, I enjoy reading about the latest developments in agricultural technology and sharing my knowledge with other farmers. I believe that by working together and sharing information, we can help to create a sustainable future for agriculture.">
                 </textarea>
                 <h1>Crops I like to grow</h1>
-                    <list>
-                        <li>Sweetcorn</li>
-                        <li>Sugar beets</li>
-                        <li>Raddish</li>
-                    </list>
+                <list>
+                    <li>Sweetcorn</li>
+                    <li>Sugar beets</li>
+                    <li>Raddish</li>
+                </list>
             </div>
         </div>
     )

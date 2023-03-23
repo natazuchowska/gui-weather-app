@@ -62,3 +62,7 @@ textarea {
 textarea::placeholder {
     color:  rgb(185, 199, 179);
 }
+
+textarea {
+    resize: none;
+}

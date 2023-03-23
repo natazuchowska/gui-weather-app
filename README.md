@@ -8,13 +8,11 @@ We faced some challenges throughout this project such as working through some of
 
 We hope you enjoy AgroWeather!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm run start`
+#### `npm run start`
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
@@ -32,5 +30,5 @@ The profile page allows the user to make the app more personal.
 ## Credits :test_tube:
 * Natalia Zuchowska
 * Dana Zerti
-* Yuhang Zhao
-* Artem 
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

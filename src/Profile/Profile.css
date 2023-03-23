@@ -46,3 +46,14 @@ li, p {
     font-size: 16px;
     margin-left: -60px;
 }
+
+textarea {
+    background-color:  rgb(229,239,220);
+    color: rgb(135, 154, 126);
+    width: 350px;
+    border-radius: 20px;
+    border: 2px solid  rgb(135, 154, 126);
+    padding: 10px;
+    height: 228px;
+    font-size: 14px;
+}

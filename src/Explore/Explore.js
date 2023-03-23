@@ -14,14 +14,14 @@ const Explore = ({ data }) => {
                     <div className="box">
                         <div className="veg">
                             <div className="name">
-                                <p>Leek</p>
+                                <p className="veg-name">Leek</p>
                                 <i className="latin">Allium porrum</i>
                             </div>
                             <img alt="leek" className='veg-img' src="./icons/leek.png"></img>
                         </div>
                         <div className="veg">
                             <div className="name">
-                                <p>Turnip</p>
+                                <p className="veg-name">Turnip</p>
                                 <i className="latin">Brassica rapa</i>
                             </div>
                             <img alt="turnip" className='veg-img' src="./icons/turnip.png"></img>
@@ -85,28 +85,28 @@ const Explore = ({ data }) => {
                     <div className="box">
                         <div className="veg">
                             <div className="name">
-                                <p>Soybeans</p>
+                                <p className="veg-name">Soybeans</p>
                                 <i className="latin">Glycine max</i>
                             </div>
                             <img alt="soybeans" className='veg-img' src="./icons/soybean.png"></img>
                         </div>
                         <div className="veg">
                             <div className="name">
-                                <p>Sunflower</p>
+                                <p className="veg-name">Sunflower</p>
                                 <i className="latin">Helianthus annuus</i>
                             </div>
                             <img alt="sunflower" className='veg-img' src="./icons/sunflower.png"></img>
                         </div>
                         <div className="veg">
                             <div className="name">
-                                <p>Cucumber</p>
+                                <p className="veg-name">Cucumber</p>
                                 <i className="latin">Cucumis sativus</i>
                             </div>
                             <img alt="cucumber" className='veg-img' src="./icons/cucumber.png"></img>
                         </div>
                         <div className="veg">
                             <div className="name">
-                                <p>Sweetcorn</p>
+                                <p className="veg-name">Sweetcorn</p>
                                 <i className="latin">Zea mays</i>
                             </div>
                             <img alt="sweetcorn" className='veg-img' src="./icons/corn.png"></img>

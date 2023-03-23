@@ -1,5 +1,5 @@
 .profile-img {
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: -80px;
     width: 100px;
     float: left;
@@ -8,35 +8,36 @@
 .profile-section {
     background-color: rgb(229,239,220);
     border-radius: 30px;
-    padding-bottom: 500px;
     margin: -20px;
     margin-top: 100px;
+    padding-bottom: 37px;
 }
 
 /* make the name bolder */
 .title {
-    padding-top: 80px;
+    padding-top: 60px;
     color: rgb(106, 70, 112);
     font-size: 25px;
     padding-left: 40px;
 }
 
 h1, h2 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
 .about-me {
     color: rgb(135, 154, 126);
-    margin-top: 70px;
+    margin-top: 50px;
     display: block;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 li, p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .subscr {

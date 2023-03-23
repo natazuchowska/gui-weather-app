@@ -1,5 +1,6 @@
 import "./current-weather.css";
 
+// CurrentWeather component to display the sunset and sunrise times and the temperature in the particular city
 const CurrentWeather = ({ data }) => {
     return (
         <>

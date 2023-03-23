@@ -13,6 +13,7 @@ const Forecast = ({ data }) => {
     return (
         <div className="forecast-bar">
             <div className="forecast-items" >
+                { /* maps the data for each of the 7 elements */}
                 {data.list.splice(0, 7).map((item, id) => (
                     <div key={id}>
                         <div className="daily-item">

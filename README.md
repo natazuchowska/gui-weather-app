@@ -1,4 +1,4 @@
-# AgroWeather App
+# AgroWeather App :farmer:
 
 Welcome to AgroWeather! This is a weather app made for farmers and anyone who is interested in the agriculture world. This app focuses providing farmers with the weather resources they need to improve yield and to help with preparations using the forecast.
 

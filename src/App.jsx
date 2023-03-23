@@ -65,7 +65,7 @@ function App() {
   // render for the Profile component
   const renderProfile = () => {
     return (
-      <Profile>IMPLEMENT THE PROFILE PAGE HERE</Profile>
+      <Profile></Profile>
     )
   }
 

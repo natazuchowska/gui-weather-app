@@ -19,17 +19,17 @@ Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Features of AgroWeather
-### Search Bar
+### Search Bar :mag:
 AgroWeather has implemented a search bar that allows users to view the weather from all around the world. Simply by typing the location, the user is able to view the weekly forecast and the crops suitable for that weather.
 
-### Crops Suitable for this weather
+### Crops Suitable for this weather :leafy_green:
 This page gives an idea of what crops are great to grow in the current weather they are viewing. This is extremely helpful when farmers are planning to grow some new crops and need an idea of what weather confitions are suitable.
 
-### Profile Page
+### Profile Page :adult:
 The profile page allows the user to make the app more personal. 
 
 
-## Credits
+## Credits :test_tube:
 * Natalia Zuchowska
 * Dana Zerti
 * Yuhang Zhao

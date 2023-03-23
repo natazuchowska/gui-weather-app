@@ -4,10 +4,11 @@ const DAYS_OF_WEEK = ['Mon', 'Tue', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
 
 const Forecast = ({ data }) => {
 
+    // display forecast starting from the next day of the week
     const dayOfWeek = new Date().getDay();
     const days_forecast = DAYS_OF_WEEK.slice(dayOfWeek, DAYS_OF_WEEK.length).concat(DAYS_OF_WEEK.slice(0, dayOfWeek));
 
-    console.log(days_forecast);
+    // console.log(days_forecast);
 
     return (
         <div className="forecast-bar">
@@ -26,5 +27,4 @@ const Forecast = ({ data }) => {
         </div>
     );
 }
-
 export default Forecast;

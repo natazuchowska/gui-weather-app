@@ -3,9 +3,10 @@ import "./Explore.css";
 const Explore = ({ data }) => {
 
     const temp = data.main.temp;
-    // const temp = -1;
-    // console.log(temp);
 
+    // Explore component used to display details about carticular crops.
+    // The temperature data fetched from the openWeatherMap API is used in the swift statement to determine which set of plants is
+    // .. suitable to grow in such weather conditions
     switch(true) {
         case (temp<0):
             return (

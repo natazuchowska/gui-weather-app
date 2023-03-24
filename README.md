@@ -9,8 +9,10 @@ We faced some challenges throughout this project such as working through some of
 We hope you enjoy AgroWeather!
 
 ### Available Scripts
+Before you start running the app, the uploaded .zip folder does not include node_modules which have to be installed via running:
+### `npm install`
 
-In the project directory, you can run:
+Then in the project directory, you can run:
 
 #### `npm run start`
 Runs the app in the development mode.
